@@ -161,14 +161,15 @@ footer{
     align-items: center;
     justify-content: center;
     background-color: #1c2029;
-    height: 100px;
+    padding-bottom: 100px;
+    gap: 30px;
 }
 
 footer a{
     display: inline-block;
     background-color: #0772eb;
     padding: 15px 70px;
-    margin-top: -45px;
+    margin-top: -20px;
     border-radius: 50px;
     border: none;
     color: #fff;
@@ -180,4 +181,72 @@ footer a{
 footer p{
     font-size: 14px;
     margin-top: 30px;
+
 }
+
+
+/***** MOBILE VERSION RESPONSIVE *****/
+
+
+@media(max-width: 850px){
+
+    .section-1{
+        margin: 50px 50px 180px 50px;
+    }
+
+    .section-1 h2{
+        font-size: 35px;
+    }
+
+    .cards{
+        justify-content: space-around;
+    }
+}
+
+
+@media(max-width: 725px){ 
+    
+    .section-1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0 150px 0;
+    }
+
+    .action-title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .action-title h2{
+        margin: 50px 70px;
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .section-1 a{
+        margin-top: 10px;
+    }
+
+
+    /***** SECTION-2 *****/
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding-top: 30px;
+    }
+
+
+    /***** SECTION-3 *****/    
+
+    .section-3 h2{
+        font-size: 30px;
+    }
+
+}
+
